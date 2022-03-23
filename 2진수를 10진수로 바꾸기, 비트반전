@@ -1,0 +1,45 @@
+package dkssdu;
+
+import java.util.*;
+
+public class 씨애랑{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("2진수를 입력하시오:") ;
+		int a = sc.nextInt();
+		// 받은 숫자를 자릿수별로 쪼개기
+
+		int t = a/1000 ;
+		int c = a%1000/100 ;
+		int d = a%1000%100/10 ;
+		int e = a%1000%100%10 ;
+		
+		// 2진수가 10진수로 변환될 때 각 자릿수의 숫자에 알맞은 수를 곱함 
+		 int m = 8 * t ;
+		 int n = 4 * c ;
+		 int b = 2 * d ;
+		 int v = 1 * e ;
+		
+		
+		int x = m + n + b + v ;
+		
+		System.out.print("10진수로 반환된 값은: ") ;
+		System.out.println(x) ;
+		
+    // 비트반전 시키기 
+		t = (t==1)? 0 : 1 ;
+		c = (c==1)? 0 : 1 ;
+		d = (d==1)? 0 : 1 ;
+		e = (e==1)? 0 : 1 ;
+		
+		System.out.print("비트 반전된 값은: ") ;
+		System.out.print(t);
+		System.out.print(c);
+		System.out.print(d);
+		System.out.print(e);
+	}
+}
+	
