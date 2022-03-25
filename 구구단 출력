@@ -1,0 +1,23 @@
+package dkssdu;
+	import java.util.* ;
+public class unine {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in) ;
+		
+		// 숫자 N을 받아 구구단 N단을 출력하기 
+		int N = sc.nextInt() ;
+		
+		// 실행가능한 N의 값의 범위를 지정한다
+		if (N> 0 && N<= 9) {
+			for ( int i = 1 ; i < 10 ; i ++) {
+				System.out.print( N + " * " + i + " = ");
+				System.out.println(i*N) ;
+			} 
+		// 실행 가능한 N의 범위를 넘어섰을 때의 경우 "구구단 종료"라는 말을 출력하고 프로그램 종료 
+		} else {
+			System.out.print("구구단 종료") ;
+		}
+	}
+}
