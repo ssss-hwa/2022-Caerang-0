@@ -1,0 +1,41 @@
+package mento;
+	import java.util.* ;
+public class s {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Scanner sc = new Scanner(System.in) ;
+			System.out.println("커피종류와 수량을 주문하세요") ;
+			
+			String x = sc.nextLine() ;
+			int y = sc.nextInt();
+			System.out.println("주문 메뉴 : " + x) ;
+			System.out.println("수량 : " +y) ;
+			int price=0 ;
+			
+			switch(x) {
+				case "아메리카노" : 
+					price += 2500 * y ;
+					
+					break ;
+					
+				case "에소프레소" :
+					price += 2000 * y ;
+					
+					break ;
+					
+				case "카푸치노" :
+					price += 3000 * y ;
+					
+					break ;
+					
+				case "카페라떼" :
+					price += 3500 * y ;
+					
+					break ;
+			}
+			
+	 System.out.println("총금액: " + price) ;
+	}
+
+}
