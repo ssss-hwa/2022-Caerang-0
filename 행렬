@@ -1,0 +1,40 @@
+package cearang_week3;
+ 	import java.util.* ;
+public class week_03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in) ;
+		
+		int arr[][] = new int[5][5] ;
+		int num = 1 ;
+		boolean fact = true ;
+		for (int i=0; i<5; i++ ) {
+			
+			if (fact == true) {
+				
+				for (int j= 0; j<5; j++) {
+					arr[i][j] = num++ ;
+				}
+				
+			}
+			
+			 
+			else {	
+				for (int j= 4; j>=0; j--) {
+					arr[i][j] =num++ ;
+				}
+			} 	fact=!fact ;
+			
+			
+		}
+		for (int i = 0; i<5; i++) {
+			for (int j = 0; j<5; j++) {
+				System.out.print(arr[i][j] + "\t") ;
+			}
+			System.out.println(' ') ;
+		}
+		
+	}
+
+}
